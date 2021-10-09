@@ -1,0 +1,95 @@
+@import url('./fonts/galano-grotesque/style.css');
+
+.html, body {
+    height: 100vh;
+
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: #0c0d10;
+}
+
+.main-content .heading {
+    margin-top: 7rem;
+    margin-bottom: 0px;
+    color: white;
+    font-size: 3.5rem;
+    font-weight:normal;
+    font-family:'Galano Grotesque Bold';
+}
+
+.main-content .subheading {
+    margin-top: 1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: white;
+}
+
+#newsletter-input {
+    padding: 0 32px;
+    width: 20rem;
+    font-family:'Galano Grotesque Regular';
+    border-radius: 20px;
+}
+
+#newsletter-input::placeholder {
+    color: #cac3fa;
+}
+
+#newletter-btn {
+    border-radius: 20px;
+    background-color: #8a7af3;
+    color: white;
+    text-transform: none;
+}
+
+.newsletter-checkbox-container {
+    margin-top: 1rem !important;
+    color: white;
+}
+
+#newsletter-checkbox {
+    background-color: transparent;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 0.25rem;
+    border: 2px solid white;
+}
+
+#newsletter-checkbox:checked {
+    background-color: #8a7af3;
+    color: black;
+}
+
+
+.waves {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    /* For mobile: */
+
+    .main-content .heading {
+        font-size: 3rem;
+    }
+
+    .main-content .subheading {
+        font-size: 1.3rem;
+    }
+
+    #newletter-btn {
+        margin-left: 0px !important;
+    }
+
+  }
+
